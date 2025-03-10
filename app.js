@@ -7,6 +7,12 @@ function sortear(){
     let quantidade = parseInt(document.getElementById('quantidade').value);
     let de = parseInt(document.getElementById('de').value);
     let ate = parseInt(document.getElementById('ate').value);
+
+    if (de >= ate){
+        alert("Verifique se os dados Inseridos estão corretos!");
+        reiniciar();
+        return;
+    }
     
     let sorteados = [];
     let numero;
