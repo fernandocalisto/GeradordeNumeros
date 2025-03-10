@@ -13,6 +13,12 @@ function sortear(){
         reiniciar();
         return;
     }
+
+    if (quantidade > ate-de){
+        alert("Quantidade de Números Impossível!");
+        reiniciar();
+        return;
+    }
     
     let sorteados = [];
     let numero;
